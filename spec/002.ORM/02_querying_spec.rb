@@ -78,7 +78,7 @@ describe "ORMs" do
       describe "::latest_finish" do
         it "returns the campaign that will be the last to end" do
           campaign = CrowdFundrCampaign.latest_finish
-          expect(campaign).to eq(@c4)
+          expect(campaign).to include(@c4)
         end
       end
     end
